@@ -5,6 +5,8 @@ import App from './App';
 import { StateProvider } from './utils/StateProvider';
 import reducer, { initialstate } from './utils/reducer';
 
+// console.log('Initial State App.js:', initialstate);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

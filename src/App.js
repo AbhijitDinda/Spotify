@@ -7,6 +7,7 @@ import Spotify from "./components/Spotify";
 function App() {
 
   const [ token, dispatch] = useStateProvider();
+  // console.log(token);
   
   useEffect(() => {
     const hash = window.location.hash;

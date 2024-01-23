@@ -1,8 +1,16 @@
 import React from 'react'
 import styled from "styled-components";
+import CurrentTrack from './CurrentTrack';
+import PlayerControl from './PlayerControl';
+import Volume from './Volume';
 function Footer() {
   return (
-    <Container>Footer</Container>
+    <Container>
+    <CurrentTrack/>
+    <PlayerControl/>
+    <Volume/>
+    
+    </Container>
   )
 }
 
