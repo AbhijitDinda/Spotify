@@ -49,10 +49,11 @@ const reducer =(state,action)=>{
           }; 
           
           case reducerCases.SET_PLAYLIST_ID:
+            // console.log("reducer playlist id",action.selectedPlaylistId)
             return {
               ...state,
               selectedPlaylistId: action.selectedPlaylistId,
-            };  
+            };
 
       default:
         return state;

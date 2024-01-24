@@ -3,11 +3,11 @@ import { useStateProvider } from "../utils/StateProvider";
 import axios from "axios";
 import {reducerCases} from "../utils/Constants"
 import styled from "styled-components";
+// import { logDOM } from "@testing-library/react";
 
 function Playlist() {
     const [state, dispatch] = useStateProvider();
-    const { token,playlists } = state;
-  
+    const { token,playlists} = state;
   
   useEffect(() => {
     const getPlayListData = async () => {
@@ -39,11 +39,18 @@ function Playlist() {
     };
 
     getPlayListData();
+
+
   }, [dispatch,token]);
 
+
   const changeCurrentPlaylist = (selectedPlaylistId) => {
+    console.log(selectedPlaylistId);
+
     dispatch({ type: reducerCases.SET_PLAYLIST_ID, selectedPlaylistId });
   };
+
+
 
   return (
     <Container>
